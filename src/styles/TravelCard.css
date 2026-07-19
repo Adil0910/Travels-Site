@@ -1,0 +1,140 @@
+.tc-wrap {
+    display: flex;
+    border: 1px solid;
+    border-radius: 42px;
+    width: 88%;
+    backdrop-filter: blur(78px);
+    justify-content: center;
+    padding: 40px;
+    background: transparent;
+    gap: 2rem;
+}
+.tc-card {
+    position: relative;
+    width: 280px;
+    background: #ffffff1c;
+    border-radius: 28px;
+    padding: 20px 20px 20px;
+    backdrop-filter: blur(19px);
+    overflow: hidden;
+}
+
+.tc-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.tc-pin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.tc-city {
+  color: #ffffff;
+  font-size: 17px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.tc-image-wrap {
+  width: 100%;
+  height: 280px;
+  border-radius: 60% 40% 55% 45% / 45% 55% 45% 55%;
+  overflow: hidden;
+  margin: 0 -20px 0 0;
+  position: relative;
+}
+
+.tc-image {
+  position: absolute;   /* IMPORTANT */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all .5s ease;  /* IMPORTANT */
+}
+
+.tc-place {
+  color: #cfd0e6;
+  font-size: 14px;
+  line-height: 1.4;
+  text-align: right;
+  margin: 14px 0 18px;
+}
+
+.tc-btn {
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    padding: 15px 0;
+    border-radius: 999px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+    background: #ffffff29;
+    transition: transform 0.15s ease, opacity 0.15s ease;
+}
+
+.tc-btn:hover {
+  opacity: 0.92;
+  transform: translateY(-1px);
+}
+
+.tc-btn:active {
+  transform: translateY(0);
+  opacity: 1;
+}
+.default-img{
+    opacity:1;
+    transform:scale(1);
+}
+
+.hover-img{
+    opacity:0;
+    transform:scale(1.15);
+}
+
+.tc-card:hover .default-img{
+    opacity:0;
+    transform:scale(1.15);
+}
+
+.tc-card:hover .hover-img{
+    opacity:1;
+    transform:scale(1);
+}
+@media (max-width: 768px) {
+    .tc-card {
+    position: relative;
+    width: 194px;
+    background: #ffffff1c;
+    border-radius: 28px;
+    padding: 20px 20px 20px;
+    backdrop-filter: blur(19px);
+    overflow: hidden;
+}
+.tc-image-wrap {
+    width: 100%;
+    height: 198px;
+    border-radius: 60% 40% 55% 45% / 45% 55% 45% 55%;
+    overflow: hidden;
+    margin: 0 -20px 0 0;
+    position: relative;
+}
+.tc-wrap {
+    display: flex;
+    border: 1px solid;
+    border-radius: 42px;
+    width: 68%;
+    backdrop-filter: blur(78px);
+    justify-content: center;
+    padding: 40px;
+    background: transparent;
+    gap: 2rem;
+    flex-direction: column;
+}
+}
